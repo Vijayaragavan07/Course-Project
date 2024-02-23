@@ -56,7 +56,17 @@ const routes = [
       sidebar: () => import('@/pages/SideBar.vue'),
 
     },
-  }
+  },
+  {
+    path: '/assessment/:name/:title/:level',
+    name: 'EnrolledAssessment',
+    components: {
+      default: () => import('@/skill/EnrolledAssessment.vue'),
+      sidebar: () => import('@/pages/SideBar.vue'),
+
+    },
+    props:true
+  },
 ]
 
 let router = createRouter({

@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:title",
+ "autoname": "CD.#####",
  "creation": "2024-02-18 18:06:14.691395",
  "default_view": "List",
  "doctype": "DocType",
@@ -12,7 +12,9 @@
   "duration",
   "fees",
   "description",
-  "level"
+  "level",
+  "max_time",
+  "image"
  ],
  "fields": [
   {
@@ -20,8 +22,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Title",
-   "reqd": 1,
-   "unique": 1
+   "reqd": 1
   },
   {
    "fieldname": "duration",
@@ -44,14 +45,25 @@
   },
   {
    "fieldname": "level",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Level",
+   "options": "Basic\nIntermediate\nAdvanced",
    "reqd": 1
+  },
+  {
+   "fieldname": "max_time",
+   "fieldtype": "Data",
+   "label": "Max Time"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-19 13:37:42.407713",
+ "modified": "2024-02-23 21:24:29.332638",
  "modified_by": "Administrator",
  "module": "First Project",
  "name": "Course Details",

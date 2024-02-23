@@ -1,7 +1,6 @@
 <template>
     <div>
         <main class="flex-1">
-            
             <div class="row">
                 <div class="col-1">
                     <button class="btn btn-primary font-bold">Explore<span class="">🔻</span></button>
